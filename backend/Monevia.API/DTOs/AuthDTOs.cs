@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FinanzasIA.API.DTOs;
+namespace Monevia.API.DTOs;
 
 public record RegisterRequest(
     [param: Required] [param: MinLength(2)] [param: MaxLength(100)] string Nombre,

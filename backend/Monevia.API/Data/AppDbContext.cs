@@ -1,7 +1,7 @@
-using FinanzasIA.API.Entities;
+using Monevia.API.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinanzasIA.API.Data;
+namespace Monevia.API.Data;
 
 public class AppDbContext : DbContext
 {

@@ -3,14 +3,14 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "FinanzasIA!_ClaveSegura_2026"
+      MSSQL_SA_PASSWORD: "Monevia!_ClaveSegura_2026"
       MSSQL_PID: "Express"
     ports:
       - "1433:1433"
     volumes:
       - sql_data:/var/opt/mssql
     healthcheck:
-      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"FinanzasIA!_ClaveSegura_2026\" -C -Q \"SELECT 1\""]
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"Monevia!_ClaveSegura_2026\" -C -Q \"SELECT 1\""]
       interval: 10s
       timeout: 5s
       retries: 10
@@ -25,17 +25,17 @@ services:
       - "8123:8123"
 
   backend:
-    build: ./backend/FinanzasIA.API
+    build: ./backend/Monevia.API
     depends_on:
       sqlserver:
         condition: service_healthy
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=FinanzasIA;User Id=sa;Password=FinanzasIA!_ClaveSegura_2026;TrustServerCertificate=True;MultipleActiveResultSets=true"
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=Monevia;User Id=sa;Password=Monevia!_ClaveSegura_2026;TrustServerCertificate=True;MultipleActiveResultSets=true"
       IA__BaseUrl: "http://ai-service:8123"
       Jwt__Key: "F1nanz1asA_Clave_JWT_Produccion_2026_#Segura$Para_Deploy"
-      Jwt__Issuer: "FinanzasIA"
-      Jwt__Audience: "FinanzasIAApp"
+      Jwt__Issuer: "Monevia"
+      Jwt__Audience: "MoneviaApp"
       Jwt__ExpiracionHoras: "8"
     ports:
       - "5226:8080"

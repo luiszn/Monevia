@@ -1,4 +1,4 @@
-namespace FinanzasIA.API.Entities;
+namespace Monevia.API.Entities;
 
 public class Usuario
 {

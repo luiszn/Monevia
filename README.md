@@ -1,4 +1,4 @@
-# FinanzasIA
+# Monevia
 
 Aplicación de finanzas personales con **análisis inteligente por IA**. Registra tus ingresos y
 gastos, define presupuestos y obtén insights automáticos sobre tus finanzas.
@@ -44,7 +44,7 @@ un LLM compatible con la API de OpenAI.
 ### 1. Backend (ASP.NET Core API)
 
 ```powershell
-cd backend\FinanzasIA.API
+cd backend\Monevia.API
 dotnet restore
 dotnet ef database update   # solo la primera vez: crea la BD y los datos semilla
 dotnet run
@@ -80,7 +80,7 @@ npm.cmd run dev
 
 ```powershell
 # Backend (xUnit)
-cd backend\FinanzasIA.API.Tests
+cd backend\Monevia.API.Tests
 dotnet test
 
 # Servicio IA (pytest)

@@ -34,7 +34,7 @@ export function Sidebar({
       >
         <div className="flex h-16 items-center gap-2 border-b border-slate-800 px-5">
           <span className="text-xl">💠</span>
-          <span className="text-lg font-bold text-white">FinanzasIA</span>
+          <span className="text-lg font-bold text-white">Monevia</span>
         </div>
 
         <nav className="flex-1 space-y-1 px-3 py-4">

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FinanzasIA.API.DTOs;
+namespace Monevia.API.DTOs;
 
 public record PresupuestoRequest(
     [param: Required] int CategoriaId,

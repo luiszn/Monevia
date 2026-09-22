@@ -1,4 +1,4 @@
-namespace FinanzasIA.API.DTOs;
+namespace Monevia.API.DTOs;
 
 public record CategoriaResponse(
     int Id,

@@ -1,11 +1,11 @@
-using FinanzasIA.API.Data;
-using FinanzasIA.API.DTOs;
-using FinanzasIA.API.Services;
+using Monevia.API.Data;
+using Monevia.API.DTOs;
+using Monevia.API.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinanzasIA.API.Controllers;
+namespace Monevia.API.Controllers;
 
 [ApiController]
 [Route("api/ia")]

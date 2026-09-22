@@ -33,7 +33,7 @@ export default function Login() {
         <div className="mb-8 text-center">
           <span className="text-4xl">💠</span>
           <h1 className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-100">
-            FinanzasIA
+            Monevia
           </h1>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Inicia sesión para gestionar tus finanzas

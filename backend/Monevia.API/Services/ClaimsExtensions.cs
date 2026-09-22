@@ -1,6 +1,6 @@
 using System.Security.Claims;
 
-namespace FinanzasIA.API.Services;
+namespace Monevia.API.Services;
 
 public static class ClaimsExtensions
 {

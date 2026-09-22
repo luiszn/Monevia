@@ -1,7 +1,7 @@
-using FinanzasIA.API.DTOs;
-using FinanzasIA.API.Entities;
+using Monevia.API.DTOs;
+using Monevia.API.Entities;
 
-namespace FinanzasIA.API.Services;
+namespace Monevia.API.Services;
 
 public static class Mapeos
 {

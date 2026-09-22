@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FinanzasIA.API\FinanzasIA.API.csproj" />
+    <ProjectReference Include="..\Monevia.API\Monevia.API.csproj" />
   </ItemGroup>
 
 </Project>

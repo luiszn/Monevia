@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace FinanzasIA.API.DTOs;
+namespace Monevia.API.DTOs;
 
 public record MovimientoRequest(
     [param: Required] string Tipo,

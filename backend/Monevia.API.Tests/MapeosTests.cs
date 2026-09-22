@@ -1,7 +1,7 @@
-using FinanzasIA.API.Entities;
-using FinanzasIA.API.Services;
+using Monevia.API.Entities;
+using Monevia.API.Services;
 
-namespace FinanzasIA.API.Tests;
+namespace Monevia.API.Tests;
 
 public class MapeosTests
 {

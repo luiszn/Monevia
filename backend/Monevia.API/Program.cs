@@ -1,6 +1,6 @@
 using System.Text;
-using FinanzasIA.API.Data;
-using FinanzasIA.API.Services;
+using Monevia.API.Data;
+using Monevia.API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;

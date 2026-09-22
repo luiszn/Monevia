@@ -1,10 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using FinanzasIA.API.Entities;
+using Monevia.API.Entities;
 using Microsoft.IdentityModel.Tokens;
 
-namespace FinanzasIA.API.Services;
+namespace Monevia.API.Services;
 
 public class TokenService
 {

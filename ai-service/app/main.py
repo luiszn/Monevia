@@ -1,4 +1,4 @@
-"""Servicio de IA de FinanzasIA.
+"""Servicio de IA de Monevia.
 
 Endpoint principal:
 - POST /api/analizar : análisis del período con insights
@@ -16,8 +16,8 @@ from pydantic import BaseModel, Field
 from . import analisis, llm
 
 app = FastAPI(
-    title="FinanzasIA AI Service",
-    description="Servicio de análisis financiero con IA para FinanzasIA.",
+    title="Monevia AI Service",
+    description="Servicio de análisis financiero con IA para Monevia.",
     version="0.2.0",
 )
 

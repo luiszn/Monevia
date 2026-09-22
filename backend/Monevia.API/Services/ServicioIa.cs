@@ -1,8 +1,8 @@
 using System.Net.Http.Json;
 using System.Text.Json;
-using FinanzasIA.API.DTOs;
+using Monevia.API.DTOs;
 
-namespace FinanzasIA.API.Services;
+namespace Monevia.API.Services;
 
 public class ServicioIa
 {

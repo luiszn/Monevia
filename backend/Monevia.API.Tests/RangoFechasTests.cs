@@ -1,6 +1,6 @@
-using FinanzasIA.API.Services;
+using Monevia.API.Services;
 
-namespace FinanzasIA.API.Tests;
+namespace Monevia.API.Tests;
 
 public class RangoFechasTests
 {
