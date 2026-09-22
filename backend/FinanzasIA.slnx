@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FinanzasIA.API.Tests/FinanzasIA.API.Tests.csproj" />
+  <Project Path="FinanzasIA.API/FinanzasIA.API.csproj" />
+</Solution>

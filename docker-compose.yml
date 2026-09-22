@@ -1,0 +1,51 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "FinanzasIA!_ClaveSegura_2026"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"FinanzasIA!_ClaveSegura_2026\" -C -Q \"SELECT 1\""]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  ai-service:
+    build: ./ai-service
+    environment:
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      OPENAI_MODELO: "${OPENAI_MODELO:-gpt-4o-mini}"
+    ports:
+      - "8123:8123"
+
+  backend:
+    build: ./backend/FinanzasIA.API
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Production"
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=FinanzasIA;User Id=sa;Password=FinanzasIA!_ClaveSegura_2026;TrustServerCertificate=True;MultipleActiveResultSets=true"
+      IA__BaseUrl: "http://ai-service:8123"
+      Jwt__Key: "F1nanz1asA_Clave_JWT_Produccion_2026_#Segura$Para_Deploy"
+      Jwt__Issuer: "FinanzasIA"
+      Jwt__Audience: "FinanzasIAApp"
+      Jwt__ExpiracionHoras: "8"
+    ports:
+      - "5226:8080"
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  sql_data:
