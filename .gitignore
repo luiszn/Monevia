@@ -1,0 +1,28 @@
+# .NET / ASP.NET Core
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# IDE
+.idea/
+*.swp
+
+# Secrets / Env
+.env
+appsettings.Development.json
