@@ -79,13 +79,18 @@ export function usePeriodo() {
     setClave('Rango')
   }, [])
 
-  return {
-    ...config,
-    parametros: {
+  const parametros = useMemo(
+    () => ({
       periodo: config.clave === 'Rango' ? 'Rango' : config.clave,
       desde: config.clave === 'Rango' ? config.desde : undefined,
       hasta: config.clave === 'Rango' ? config.hasta : undefined,
-    },
+    }),
+    [config.clave, config.desde, config.hasta],
+  )
+
+  return {
+    ...config,
+    parametros,
     seleccionarClave,
     cambiarRango,
     desdeManual,
