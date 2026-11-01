@@ -17,18 +17,18 @@
 
 ---
 
-## ✨ Características
+##  Características
 
 | Módulo | Descripción |
 |--------|-------------|
-| 📊 **Dashboard** | Balance general, comparación con el período anterior, gastos por categoría y evolución diaria con gráficos interactivos |
-| 💰 **Ingresos & Gastos** | Registro, edición, eliminación, búsqueda y filtros avanzados por período, categoría y tipo |
-| 📁 **Presupuestos** | Presupuestos por categoría con avisos automáticos — ⚠️ ≥ 85% *"Cerca del límite"* / 🔴 100% *"Superado"* |
-| 🤖 **Análisis IA** | Resumen del período, mayor gasto, alertas de presupuesto y respuestas a preguntas en lenguaje natural |
-| 🔐 **Seguridad** | Autenticación JWT con contraseñas hasheadas (BCrypt) y aislamiento total de datos por usuario |
-| 🎨 **UI/UX** | Modo claro/oscuro, diseño responsive y navegación lateral |
+|  **Dashboard** | Balance general, comparación con el período anterior, gastos por categoría y evolución diaria con gráficos interactivos |
+|  **Ingresos & Gastos** | Registro, edición, eliminación, búsqueda y filtros avanzados por período, categoría y tipo |
+|  **Presupuestos** | Presupuestos por categoría con avisos automáticos — ⚠️ ≥ 85% *"Cerca del límite"* / 🔴 100% *"Superado"* |
+|  **Análisis IA** | Resumen del período, mayor gasto, alertas de presupuesto y respuestas a preguntas en lenguaje natural |
+|  **Seguridad** | Autenticación JWT con contraseñas hasheadas (BCrypt) y aislamiento total de datos por usuario |
+|  **UI/UX** | Modo claro/oscuro, diseño responsive y navegación lateral |
 
-### 🧠 Consultas de ejemplo al asistente IA
+###  Consultas de ejemplo al asistente IA
 
 ```
 ¿En qué gasté más esta semana?
@@ -41,7 +41,7 @@
 
 ---
 
-## 🏗️ Arquitectura
+##  Arquitectura
 
 ```
 ┌──────────────────┐         /api          ┌───────────────────────────┐
@@ -99,9 +99,9 @@ Las migraciones de BD se aplican automáticamente al arrancar.
 
 | Servicio | URL |
 |----------|-----|
-| 🌐 Frontend | http://localhost:5173 |
-| ⚙️ API REST | http://localhost:5226 |
-| 🤖 Servicio IA | http://localhost:8123 |
+|  Frontend | http://localhost:5173 |
+|  API REST | http://localhost:5226 |
+|  Servicio IA | http://localhost:8123 |
 
 > ⚠️ **Seguridad**: cambia la clave JWT (`Jwt__Key`) y la contraseña SA de SQL Server antes de desplegar en un entorno público.
 
@@ -149,7 +149,7 @@ npm.cmd run dev
 
 ---
 
-## 🧪 Pruebas
+##  Pruebas
 
 ```powershell
 # Backend — xUnit
